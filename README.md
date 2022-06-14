@@ -1,0 +1,1 @@
+# Fastify-error-example

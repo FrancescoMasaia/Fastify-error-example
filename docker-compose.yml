@@ -1,0 +1,12 @@
+version: '3.3'
+services: 
+    testbackend:     
+        build:
+            context: .
+            dockerfile: Dockerfile
+        # network_mode: host
+        image: giuliettbackend:latest
+        ports: 
+            - "127.0.0.1:3033:3000"
+        volumes:
+            - ~/.logs/:/logs:rw
